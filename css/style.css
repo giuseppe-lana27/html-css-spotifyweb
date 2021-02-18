@@ -18,6 +18,28 @@ aside{
   height: 100%;
   background-color: green;
 }
+.logo{
+  height: 80px;
+  width: 100%;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+.actions{
+  padding: 10px 0; 
+}
+.home{
+  height: 50px;
+  background-color: purple;
+}
+.search{
+  height: 50px;
+  background-color: orange;
+}
+.library{
+  height: 50px;
+  background-color: orange;
+}
+
 footer{
   height: 150px;
   background-color: pink;
@@ -36,4 +58,5 @@ footer{
   height: calc(100% - 80px);
   margin-top: 80px;
   background-color: yellow;
+  overflow: auto;
 }
