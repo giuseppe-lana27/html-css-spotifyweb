@@ -10,13 +10,16 @@ body{
   height: 100vh;
 }
 main{
-  height: calc(100% - 150px);
+  height: calc(100% - 100px);
   display: flex;
 }
 aside{
   width: 300px;
   height: 100%;
   background-color: green;
+}
+h4{
+  display: inline-block;
 }
 .logo{
   height: 80px;
@@ -25,38 +28,72 @@ aside{
   margin-top: 20px;
 }
 .actions{
-  padding: 10px 0; 
+  padding: 10px 0;
 }
 .home{
-  height: 50px;
-  background-color: purple;
+  background-color: orange;
 }
 .search{
-  height: 50px;
-  background-color: orange;
+  background-color: purple;
 }
 .library{
-  height: 50px;
   background-color: orange;
 }
+.playlists{
+  height: 250px;
+  list-style: none;
+  padding: 10px;
+  overflow: auto;
+}
+.playlists li:not(:last-child){
+  margin-bottom: 10px;
+}
+.install-app{
+  width: 250px;
+  margin: 0 20px;
+  padding: 10px 10px;
+  border-bottom: 1px solid white;
+}
+.install-app a{
+  text-decoration: none;
+  color: grey;
+}
 
-footer{
-  height: 150px;
-  background-color: pink;
+.profile{
+  width: 250px;
+  margin: 0 20px;
+  color: #fff;
 }
 .upgrade{
   height: 80px;
   width: calc(100% - 300px);
-  background-color: blue;
+  background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
   left: 300px;
   right: 0;
+  z-index: 10;
 }
 .albums{
   width: calc(100% - 300px);
   height: calc(100% - 80px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   margin-top: 80px;
   background-color: yellow;
   overflow: auto;
+  padding: 10px;
+}
+
+
+
+
+footer{
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: pink;
 }
