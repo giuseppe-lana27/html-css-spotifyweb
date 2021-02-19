@@ -7,6 +7,7 @@
 /* mix */
 body{
   background-color: #000;
+  color: #666666;
 }
 .wrapper{
   height: 100vh;
@@ -29,27 +30,23 @@ aside{
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: green;
-  color: #fff;
+  background-color: #000;
+  overflow: auto;
 }
 .logo{
   width: 100%;
-  margin-top: 20px;
+  padding: 10px;
 }
 .logo img{
   height: 50px;
 }
 .actions{
-  padding: 10px 0;
+  padding: 10px 5px;
 }
-.home{
-  background-color: orange;
-}
-.search{
-  background-color: purple;
-}
+.home,
+.search,
 .library{
-  background-color: orange;
+  padding: 5px 0;
 }
 .home img,
 .search img,
@@ -57,8 +54,22 @@ aside{
   height: 30px;
   vertical-align: middle;
 }
-ul.playlist{
-  height: calc(100% - 70px);
+.playlist{
+  padding: 10px;
+}
+.create_playlist{
+  padding: 10px 5px;
+}
+.create_playlist i{
+  font-size: 30px;
+  vertical-align: middle;
+}
+.create_playlist h3{
+  display: inline-block;
+  vertical-align: middle;
+}
+ul.playlists{
+  height: calc(100% - 80px);
 }
 .playlists{
   list-style: none;
@@ -85,8 +96,7 @@ ul.playlist{
 }
 .profile{
   width: 250px;
-  margin: 0 20px;
-  color: #fff;
+  padding: 10px 20px;
 }
 /* upgrade */
 .upgrade{
