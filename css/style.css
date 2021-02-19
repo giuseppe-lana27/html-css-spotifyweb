@@ -233,6 +233,7 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
 }
 .left{
   width: 25%;
@@ -263,11 +264,12 @@ footer{
 .middle{
   width: 50%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .player{
   list-style: none;
-  align-self: flex-start;
+  align-self: center;
   margin-bottom: 15px;
 }
 .player li{
@@ -287,32 +289,41 @@ footer{
   vertical-align: middle;
 }
 .time{
-  width: 30%;
-  align-self: flex-end;
+  width: 80%;
+}
+.time p{
+  display: inline-block;
 }
 .total_time{
   width: 100%;
   height: 3px;
   background-color: #fff;
+  display: inline-block;
 }
 .right{
   width: 25%;
+  margin-left: 50px;
+
 }
-
-
 .volume{
   list-style: none;
 }
 .volume li{
   display: inline-block;
+  vertical-align: middle;
+}
+.volume li:not(:last-child){
+  margin-right: 15px;
 }
 .volume li a{
   text-decoration: none;
   color: #fff;
 }
 .total_volume{
-  width: 60px;
+  width: 80px;
   height: 3px;
+  background-color: #fff;
+  vertical-align: middle;
 }
 
 
