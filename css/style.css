@@ -235,6 +235,7 @@ footer{
   align-items: center;
 }
 .left{
+  width: 25%;
   padding: 10px;
 }
 
@@ -260,11 +261,14 @@ footer{
   margin-right: 10px;
 }
 .middle{
+  width: 50%;
   display: flex;
+  justify-content: center;
 }
-
 .player{
   list-style: none;
+  align-self: flex-start;
+  margin-bottom: 15px;
 }
 .player li{
   display: inline-block;
@@ -284,12 +288,18 @@ footer{
 }
 .time{
   width: 30%;
+  align-self: flex-end;
 }
 .total_time{
   width: 100%;
   height: 3px;
   background-color: #fff;
 }
+.right{
+  width: 25%;
+}
+
+
 .volume{
   list-style: none;
 }
