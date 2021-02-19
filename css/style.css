@@ -154,6 +154,7 @@ ul.playlists{
 }
 .album{
   width: calc((100% / 6) - 15px);
+  position: relative;
 }
 .album:not(:last-child){
   margin-right: 15px;
@@ -165,14 +166,30 @@ ul.playlists{
 .album_description h3{
   color: #fff;
 }
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 52px;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+}
+.overlay i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: #fff;
+}
+.album:hover .overlay{
+  visibility: visible;
+}
 .second_section p{
   color: #666666;
   margin-top: 5px;
 }
-
-
-
-
 /* footer */
 footer{
   height: 100px;
