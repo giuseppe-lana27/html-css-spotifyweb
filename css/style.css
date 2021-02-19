@@ -8,6 +8,7 @@
 body{
   background-color: #000;
   color: #666666;
+  font-family: 'Montserrat', sans-serif;
 }
 .wrapper{
   height: 100vh;
@@ -98,6 +99,17 @@ ul.playlists{
   width: 250px;
   padding: 10px 20px;
 }
+.circle-img{
+  width: 30px;
+  height: 30px;
+  background-color: grey;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+.profile .circle-img{
+  vertical-align: middle;
+  max-width: 100%;
+}
 /* upgrade */
 .upgrade{
   height: 80px;
@@ -125,14 +137,39 @@ ul.playlists{
 .albums{
   width: calc(100% - 300px);
   height: calc(100% - 80px);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
   margin-top: 80px;
-  background-color: yellow;
+  background-color: #141922;
   padding: 10px;
   overflow-y: auto;
 }
+.albums-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+.section_title{
+  color: #fff;
+}
+.album{
+  width: calc((100% / 6) - 15px);
+}
+.album:not(:last-child){
+  margin-right: 15px;
+}
+.album_description{
+  text-align: center;
+  padding: 5px 0;
+}
+.album_description h3{
+  color: #fff;
+}
+
+
+
+
+
+
 /* footer */
 footer{
   height: 100px;
