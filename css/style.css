@@ -142,6 +142,27 @@ ul.playlists{
   padding: 10px;
   overflow-y: auto;
 }
+.albums_nav{
+  padding: 15px 0;
+  text-align: center;
+}
+.albums_nav ul{
+  list-style: none;
+}
+.albums_nav ul li{
+  display: inline-block;
+}
+.albums_nav ul li:not(:last-child){
+  margin-right: 20px;
+}
+.albums_nav ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #666666;
+}
+.albums_nav ul li a:hover{
+  color: #fff;
+}
 .albums-container{
   display: flex;
   flex-wrap: wrap;
@@ -190,6 +211,10 @@ ul.playlists{
   color: #666666;
   margin-top: 5px;
 }
+.circle_album img{
+  border-radius: 50%;
+}
+
 /* footer */
 footer{
   height: 100px;
@@ -199,4 +224,17 @@ footer{
   right: 0;
   z-index: 10;
   background-color: #282828;
+}
+
+/* responsive */
+@media screen and (max-width: 1100px) {
+  .album{
+    width: calc((100% / 4) - 15px);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .album{
+    width: calc((100% / 2) - 15px);
+  }
 }
