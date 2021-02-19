@@ -150,6 +150,7 @@ ul.playlists{
 }
 .section_title{
   color: #fff;
+  padding: 10px 0;
 }
 .album{
   width: calc((100% / 6) - 15px);
@@ -164,8 +165,10 @@ ul.playlists{
 .album_description h3{
   color: #fff;
 }
-
-
+.second_section p{
+  color: #666666;
+  margin-top: 5px;
+}
 
 
 
@@ -178,5 +181,5 @@ footer{
   left: 0;
   right: 0;
   z-index: 10;
-  background-color: pink;
+  background-color: #282828;
 }
