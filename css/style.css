@@ -463,7 +463,7 @@ footer{
 }
 @media screen and (max-width: 600px) {
   aside{
-    width: 100px;
+    width: 60px;
   }
   .logo-big{
     display: none;
@@ -472,13 +472,27 @@ footer{
     visibility: visible;
     height: 40px;
   }
+  .actions img{
+    height: 25px;
+  }
+  .home{
+    border: none;
+  }
   .home a,
   .search a,
   .library a{
     visibility: hidden;
   }
   .playlist{
-    visibility: hidden;
+    display: none;
+  }
+  .install-app{
+    border: none;
+    margin: 0 15px;
+  }
+  .install-app a,
+  .profile a{
+    display: none;
   }
   .albums{
     width: 100%;
