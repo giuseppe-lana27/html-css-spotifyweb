@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
@@ -25,41 +26,41 @@
           <div class="actions">
             <div class="home">
               <img src="img/home.svg" alt="Home">
-              <h4>Home</h4>
+              <a href="#">Home</a>
             </div>
             <div class="search">
               <img src="img/search.svg" alt="Search">
-              <h4>Search</h4>
+              <a href="#">Search</a>
             </div>
             <div class="library">
               <img src="img/libreria.svg" alt="Libreria">
-              <h4>La tua Libreria</h4>
+              <a href="#">La tua Libreria</a>
             </div>
           </div>
           <div class="playlist">
             <h2>Playlist</h2>
             <div class="create_playlist">
               <i class="fas fa-plus-square"></i>
-              <h3>Crea Playlist</h3>
+              <a href="#">Crea Playlist</a>
             </div>
             <ul class="playlists">
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
+              <li><a href="#">Nuova Playlist</a></li>
+              <li><a href="#">Nuova Playlist</a></li>
+              <li><a href="#">Nuova Playlist</a></li>
+              <li><a href="#">Nuova Playlist</a></li>
+              <li><a href="#">Nuova Playlist</a></li>
+              <li><a href="#">Nuova Playlist</a></li>
+              <li><a href="#">Nuova Playlist</a></li>
             </ul>
           </div>
           <div class="bottom-aside">
             <div class="install-app">
+              <img src="img/download.svg" alt="Download">
               <a href="#">Installa App</a>
             </div>
             <div class="profile">
               <img src="img/profile.svg" alt="Profile" class="circle-img">
-              <h4>Giuseppe Lana</h4>
+              <a href="#">Giuseppe Lana</a>
             </div>
           </div>
         </aside>
@@ -70,7 +71,7 @@
           <div class="albums_nav">
             <nav>
               <ul>
-                <li><a href="#">In Evidenza</a></li>
+                <li class="underscored"><a href="#">In Evidenza</a></li>
                 <li><a href="#">Podcast</a></li>
                 <li><a href="#">Classifiche</a></li>
                 <li><a href="#">Generi e Mood</a></li>
@@ -150,7 +151,7 @@
           </div>
           <div class="albums-container">
             <div class="album">
-              <img src="img/tool-cover.jpg" alt="Tool">
+              <img src="img/metal_lifting.jpg" alt="Tool">
               <div class="album_description">
                 <h3>Fear Inoculum</h3>
                 <p class="author">Tool</p>
@@ -191,6 +192,7 @@
         <div class="music_player">
           <div class="left">
             <div class="album_img">
+              <img src="img/player_left.jpg" alt="">
             </div>
             <div class="song_name">
               <h5>Lorem</h5>
@@ -209,8 +211,17 @@
               <li><a href="#"><i class="fas fa-step-forward"></i></a></li>
               <li><a href="#"><i class="fas fa-redo-alt"></i></a></li>
             </ul>
-            <div class="time">              
+            <div class="time">
+              <div class="minutes">
+                <p><small>0.25</small></p>
+              </div>
               <div class="total_time">
+                <div class="passed_time">
+                  <div class="rounded"></div>
+                </div>
+              </div>
+              <div class="minutes">
+                <p><small>4.25</small></p>
               </div>
             </div>
           </div>
@@ -221,7 +232,10 @@
               <li><a href="#"><i class="fas fa-volume-up"></i></a></li>
               <li>
                 <a href="#">
-                  <div class="total_volume"></div>
+                  <div class="total_volume">
+                    <div class="volume_set">
+                    </div>
+                  </div>
                 </a>
               </li>
             </ul>

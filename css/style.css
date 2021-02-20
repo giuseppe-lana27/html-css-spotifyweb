@@ -47,16 +47,44 @@ aside{
 .home,
 .search,
 .library{
-  padding: 5px 0;
+  padding: 5px 5px;
+}
+.home a,
+.search a,
+.library a{
+  text-decoration: none;
+  color: #666666;
+  vertical-align: middle;
+  padding: 10px;
+}
+.home{
+  border-left: 1px solid lime;
 }
 .home img,
 .search img,
 .library img{
   height: 30px;
   vertical-align: middle;
+  opacity: 0.5;
+}
+.home:hover a,
+.search:hover a,
+.library:hover a{
+  color: #fff;
+}
+.home:hover img,
+.search:hover img,
+.library:hover img{
+  opacity: 1;
 }
 .playlist{
   padding: 10px;
+}
+.playlist h2{
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 10px;
 }
 .create_playlist{
   padding: 10px 5px;
@@ -65,9 +93,16 @@ aside{
   font-size: 30px;
   vertical-align: middle;
 }
-.create_playlist h3{
-  display: inline-block;
+.create_playlist a{
   vertical-align: middle;
+  text-decoration: none;
+  color: #666666;
+}
+.create_playlist:hover{
+  color: #fff;
+}
+.create_playlist:hover a{
+  color: #fff;
 }
 ul.playlists{
   height: calc(100% - 80px);
@@ -82,6 +117,13 @@ ul.playlists{
 .playlists li:not(:last-child){
   margin-bottom: 10px;
 }
+.playlist li a{
+  text-decoration: none;
+  color: #666666;
+}
+.playlist li a:hover{
+  color: #fff;
+}
 .bottom-aside{
   margin-top: auto;
 }
@@ -91,13 +133,29 @@ ul.playlists{
   padding: 10px 10px;
   border-bottom: 1px solid white;
 }
+.install-app img{
+  height: 20px;
+  vertical-align: middle;
+  opacity: 0.5;
+}
 .install-app a{
   text-decoration: none;
-  color: grey;
+  color: #666666;
+  vertical-align: middle,
+}
+.install-app:hover a{
+  color: #fff;
+}
+.install-app:hover img{
+  opacity: 1;
 }
 .profile{
   width: 250px;
   padding: 10px 20px;
+}
+.profile a{
+  text-decoration: none;
+  color: #fff;
 }
 .circle-img{
   width: 30px;
@@ -133,6 +191,9 @@ ul.playlists{
   text-decoration: none;
   display: inline-block;
 }
+.btn:hover{
+  transform: scale(1.1);
+}
 /* albums */
 .albums{
   width: calc(100% - 300px);
@@ -162,6 +223,10 @@ ul.playlists{
 }
 .albums_nav ul li a:hover{
   color: #fff;
+}
+.underscored{
+  border-bottom: 2px solid lime;
+  padding-bottom: 5px;
 }
 .albums-container{
   display: flex;
@@ -196,7 +261,7 @@ ul.playlists{
   top: 0;
   left: 0;
   right: 0;
-  bottom: 70px;
+  bottom: 0px;
   background-color: rgba(0, 0, 0, 0.5);
   visibility: hidden;
 }
@@ -218,7 +283,6 @@ ul.playlists{
 .circle_album img{
   border-radius: 50%;
 }
-
 /* footer */
 footer{
   height: 100px;
@@ -239,13 +303,13 @@ footer{
   width: 25%;
   padding: 10px;
 }
-
 .album_img{
-  width: 50px;
   height: 50px;
-  background-color: red;
   display: inline-block;
   vertical-align: middle;
+}
+.album_img img{
+  height: 100%;
 }
 .song_name{
   display: inline-block;
@@ -289,21 +353,46 @@ footer{
   vertical-align: middle;
 }
 .time{
-  width: 80%;
+  width: 70%;
 }
-.time p{
+.minutes{
   display: inline-block;
+  vertical-align: middle;
+  color: #fff;
 }
 .total_time{
-  width: 100%;
+  width: 80%;
+  height: 3px;
+  background-color: #666666;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 15px;
+}
+.passed_time{
+  width: 30%;
   height: 3px;
   background-color: #fff;
-  display: inline-block;
+  position: relative;
+}
+.rounded{
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 100%;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  visibility: hidden;
+}
+.passed_time:hover{
+  background-color: lime;
+}
+.total_time:hover .rounded{
+  visibility: visible;
 }
 .right{
   width: 25%;
-  margin-left: 50px;
-
+  padding-left: 80px;
 }
 .volume{
   list-style: none;
@@ -322,10 +411,14 @@ footer{
 .total_volume{
   width: 80px;
   height: 3px;
-  background-color: #fff;
+  background-color: #666666;
   vertical-align: middle;
 }
-
+.volume_set{
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+}
 
 
 
