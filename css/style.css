@@ -38,8 +38,11 @@ aside{
   width: 100%;
   padding: 10px;
 }
-.logo img{
+.logo-big{
   height: 50px;
+}
+.logo_small{
+  display: none;
 }
 .actions{
   padding: 10px 5px;
@@ -58,7 +61,7 @@ aside{
   padding: 10px;
 }
 .home{
-  border-left: 1px solid lime;
+  border-left: 2px solid lime;
 }
 .home img,
 .search img,
@@ -220,6 +223,7 @@ ul.playlists{
   text-decoration: none;
   text-transform: uppercase;
   color: #666666;
+  font-weight: bold;
 }
 .albums_nav ul li a:hover{
   color: #fff;
@@ -238,11 +242,13 @@ ul.playlists{
   color: #fff;
   padding: 10px 0;
 }
-.album{
+.album-box{
   width: calc((100% / 6) - 15px);
+}
+.album{
   position: relative;
 }
-.album:not(:last-child){
+.album-box:not(:last-child){
   margin-right: 15px;
 }
 .album_description{
@@ -261,7 +267,7 @@ ul.playlists{
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0px;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   visibility: hidden;
 }
@@ -418,20 +424,67 @@ footer{
   width: 30px;
   height: 3px;
   background-color: #fff;
+  position: relative;
 }
-
-
-
-
+.volume_circle{
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 100%;
+  position: absolute;
+  top: -3px;
+  right: 0;
+  visibility: hidden;
+}
+.total_volume:hover .volume_circle{
+  visibility: visible;
+}
 /* responsive */
 @media screen and (max-width: 1100px) {
-  .album{
+    .album-box{
     width: calc((100% / 4) - 15px);
+    font-size: 13px;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .album{
+  .logo_small{
+    display: none;
+  }
+  .albums_nav li{
+    width: calc((100% / 2) - 30px);
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .album-box{
     width: calc((100% / 2) - 15px);
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 600px) {
+  aside{
+    width: 100px;
+  }
+  .logo-big{
+    display: none;
+  }
+  .logo_small{
+    visibility: visible;
+    height: 40px;
+  }
+  .home a,
+  .search a,
+  .library a{
+    visibility: hidden;
+  }
+  .playlist{
+    visibility: hidden;
+  }
+  .albums{
+    width: 100%;
+  }
+  .album-box{
+    width: calc((100% / 2) - 15px);
+    font-size: 12px;
   }
 }
