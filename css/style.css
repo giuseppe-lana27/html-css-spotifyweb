@@ -31,7 +31,7 @@ aside{
   display: flex;
   flex-direction: column;
   background-color: #000;
-  overflow: auto;
+  overflow: hidden;
 }
 .logo{
   width: 100%;
@@ -82,6 +82,7 @@ aside{
 .playlist{
   padding: 10px;
   height: 100%;
+  overflow: hidden;  
 }
 .playlist h2{
   font-size: 18px;
@@ -115,7 +116,6 @@ ul.playlists{
   padding: 10px 10px;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 .playlists li:not(:last-child){
   margin-bottom: 10px;
