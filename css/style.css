@@ -479,6 +479,9 @@ footer{
   .middle{
     width: 50%;
   }
+  .player li:not(:last-child){
+    margin-right: 20px;
+  }
   .time{
     width: 100%;
     text-align: center;
@@ -495,6 +498,9 @@ footer{
   .albums_nav li{
     font-size: 12px;
   }
+  .albums_nav ul li:not(:last-child) {
+    margin-right: 10px;
+  }
   .album-box{
     width: calc((100% / 2) - 15px);
     font-size: 12px;
@@ -508,6 +514,9 @@ footer{
   }
   .middle{
     width: 40%;
+  }
+  .player li:not(:last-child){
+    margin-right: 10px;
   }
   .time{
     width: 100%;
@@ -579,6 +588,9 @@ footer{
   .album-box img{
     width: 100%;
   }
+  .left{
+    padding: 0; 
+  }
   .save{
     vertical-align: middle;
   }
@@ -586,4 +598,5 @@ footer{
     padding: 2px 0;
     display: block;
   }
+
 }
