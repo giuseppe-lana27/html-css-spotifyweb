@@ -480,6 +480,7 @@ footer{
     width: 50%;
   }
   .time{
+    width: 100%;
     text-align: center;
   }
   .total_time{
@@ -508,6 +509,9 @@ footer{
   .middle{
     width: 40%;
   }
+  .time{
+    width: 100%;
+  }
   .total_time{
     width: 50%;
   }
@@ -523,23 +527,33 @@ footer{
     display: block;
     height: 40px;
   }
+  .actions{
+    text-align: center;
+  }
   .actions img{
     height: 25px;
   }
   .home{
     border: none;
   }
+  .home,
+  .search{
+    margin-bottom: 5px;
+  }
   .home a,
   .search a,
   .library a{
-    visibility: hidden;
+    display: none;
   }
   .playlist{
     display: none;
   }
   .install-app{
     border: none;
-    margin: 0 15px;
+    margin-left: 8px;
+  }
+  .install-app img{
+    height: 30px;
   }
   .install-app a,
   .profile a{
@@ -547,7 +561,6 @@ footer{
   }
   .upgrade{
     width: calc(100% - 60px);
-
   }
   .albums{
     width: 100%;
@@ -564,7 +577,7 @@ footer{
     text-align: center;
   }
   .album-box img{
-    width: 60%;
+    width: 100%;
   }
   .save{
     vertical-align: middle;
