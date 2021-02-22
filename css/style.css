@@ -6,7 +6,6 @@
 }
 /* mix */
 body{
-  background-color: #000;
   color: #666666;
   font-family: 'Montserrat', sans-serif;
 }
@@ -179,7 +178,6 @@ ul.playlists{
   background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
-  left: 300px;
   right: 0;
   z-index: 10;
 }
@@ -206,7 +204,7 @@ ul.playlists{
   overflow-y: auto;
 }
 .albums_nav{
-  padding-top: 80px;
+  padding-top: 100px;
   text-align: center;
 }
 .albums_nav ul{
@@ -240,6 +238,7 @@ ul.playlists{
 .section_title{
   color: #fff;
   padding: 10px 0;
+  margin-top: 20px;
 }
 .album-box{
   width: calc((100% / 6) - 15px);
@@ -282,7 +281,8 @@ ul.playlists{
   visibility: visible;
   cursor: pointer;
 }
-.second_section p{
+.second_section p,
+.third_section p{
   color: #666666;
   margin-top: 5px;
 }
@@ -305,6 +305,7 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 10px;
 }
 .left{
@@ -511,7 +512,7 @@ footer{
     width: 50%;
   }
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 700px) {
   aside{
     width: 60px;
   }
@@ -544,15 +545,26 @@ footer{
   .profile a{
     display: none;
   }
+  .upgrade{
+    width: calc(100% - 60px);
+
+  }
   .albums{
     width: 100%;
   }
   .albums_nav li{
     font-size: 12px;
   }
+  .section_title{
+    font-size: 16px;
+  }
   .album-box{
-    width: calc((100% / 2) - 15px);
+    width: calc(50% - 15px);
     font-size: 12px;
+    text-align: center;
+  }
+  .album-box img{
+    width: 60%;
   }
   .save{
     vertical-align: middle;
@@ -560,8 +572,5 @@ footer{
   .save i{
     padding: 2px 0;
     display: block;
-  }
-  .total_time{
-    width: 40%;
   }
 }
