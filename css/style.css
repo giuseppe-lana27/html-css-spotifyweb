@@ -178,7 +178,7 @@ ul.playlists{
   background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
-  right: 0;
+  right: 15px;
   z-index: 10;
 }
 .btn{
@@ -373,7 +373,7 @@ footer{
   transform: scale(1.1);
 }
 .time{
-  width: 70%;
+  width: 80%;
 }
 .minutes{
   display: inline-block;
@@ -505,6 +505,10 @@ footer{
     width: calc((100% / 2) - 15px);
     font-size: 12px;
   }
+  .music_player{
+    flex-wrap: nowrap;
+    padding: 0;
+  }
   .save{
     vertical-align: middle;
   }
@@ -514,6 +518,7 @@ footer{
   }
   .middle{
     width: 40%;
+    margin-top: 10px;
   }
   .player li:not(:last-child){
     margin-right: 10px;
@@ -589,7 +594,7 @@ footer{
     width: 100%;
   }
   .left{
-    padding: 0; 
+    padding: 0;
   }
   .save{
     vertical-align: middle;
