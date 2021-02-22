@@ -600,8 +600,55 @@ footer{
     vertical-align: middle;
   }
   .save i{
-    padding: 2px 0;
     display: block;
+    font-size: 12px;
   }
-
+}
+@media screen and (max-width: 600px){
+  .album_img{
+    height: 30px;
+  }
+  .player li i{
+    font-size: 17px;
+  }
+  .player li .play{
+    font-size: 20px;
+  }
+  .minutes p{
+    font-size: 12px;
+  }
+  .volume li:not(:last-child){
+    margin-right: 5px;
+  }
+  .volume li a i{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 500px){
+  .album_img{
+    padding: 5px;
+    height: 40px;
+  }
+  .song_name,
+  .save{
+    display: none;
+  }
+  .player li i{
+    font-size: 13px;
+    vertical-align: middle;
+  }
+  .player li .play{
+    font-size: 16px;
+    vertical-align: middle;
+  }
+  .minutes{
+    display: none;
+  }
+  .volume .songs_list,
+  .volume .cast{
+    display: none;
+  }
+  .total_volume{
+    width: 50px;
+  }
 }
