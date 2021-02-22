@@ -82,6 +82,7 @@ aside{
 }
 .playlist{
   padding: 10px;
+  height: 100%;
 }
 .playlist h2{
   font-size: 18px;
@@ -200,14 +201,12 @@ ul.playlists{
 /* albums */
 .albums{
   width: calc(100% - 300px);
-  height: calc(100% - 80px);
-  margin-top: 80px;
   background-color: #141922;
   padding: 10px;
   overflow-y: auto;
 }
 .albums_nav{
-  padding: 15px 0;
+  padding-top: 80px;
   text-align: center;
 }
 .albums_nav ul{
@@ -287,12 +286,14 @@ ul.playlists{
   color: #666666;
   margin-top: 5px;
 }
-.circle_album img{
+.circle_album{
+  overflow: hidden;
   border-radius: 50%;
 }
 /* footer */
 footer{
   height: 100px;
+  width: 100%;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -307,7 +308,6 @@ footer{
   padding: 10px;
 }
 .left{
-  width: 25%;
   padding: 10px;
 }
 .album_img{
@@ -342,7 +342,7 @@ footer{
   cursor: pointer;
 }
 .middle{
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -410,8 +410,7 @@ footer{
   visibility: visible;
 }
 .right{
-  width: 25%;
-  padding-left: 80px;
+  text-align: right;
 }
 .volume{
   list-style: none;
@@ -454,26 +453,65 @@ footer{
 }
 /* responsive */
 @media screen and (max-width: 1100px) {
+  .albums_nav li{
+    margin-bottom: 10px;
+  }
   .album-box{
     width: calc((100% / 4) - 15px);
     font-size: 13px;
   }
+  .time{
+    text-align: center;
+  }
+  .total_time{
+    width: 65%;
+  }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 992px) {
+  .save{
+    vertical-align: middle;
+  }
+  .save i{
+    padding: 2px 0;
+    display: block;
+  }
+  .middle{
+    width: 50%;
+  }
+  .time{
+    text-align: center;
+  }
+  .total_time{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .logo_small{
     display: none;
   }
   .albums_nav li{
-    width: calc((100% / 2) - 30px);
-    margin-top: 10px;
     font-size: 12px;
   }
   .album-box{
     width: calc((100% / 2) - 15px);
     font-size: 12px;
   }
+  .save{
+    vertical-align: middle;
+  }
+  .save i{
+    padding: 2px 0;
+    display: block;
+  }
+  .middle{
+    width: 40%;
+  }
+  .total_time{
+    width: 50%;
+  }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
   aside{
     width: 60px;
   }
@@ -481,7 +519,7 @@ footer{
     display: none;
   }
   .logo_small{
-    visibility: visible;
+    display: block;
     height: 40px;
   }
   .actions img{
@@ -509,8 +547,21 @@ footer{
   .albums{
     width: 100%;
   }
+  .albums_nav li{
+    font-size: 12px;
+  }
   .album-box{
     width: calc((100% / 2) - 15px);
     font-size: 12px;
+  }
+  .save{
+    vertical-align: middle;
+  }
+  .save i{
+    padding: 2px 0;
+    display: block;
+  }
+  .total_time{
+    width: 40%;
   }
 }
