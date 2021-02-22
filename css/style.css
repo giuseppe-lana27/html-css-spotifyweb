@@ -82,7 +82,7 @@ aside{
 .playlist{
   padding: 10px;
   height: 100%;
-  overflow: hidden;  
+  overflow: hidden;
 }
 .playlist h2{
   font-size: 18px;
@@ -277,7 +277,7 @@ ul.playlists{
   font-size: 50px;
   color: #fff;
 }
-.album:hover .overlay{
+.album-box:hover .overlay{
   visibility: visible;
   cursor: pointer;
 }
