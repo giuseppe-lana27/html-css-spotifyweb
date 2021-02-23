@@ -118,6 +118,7 @@ aside{
   vertical-align: middle;
   text-decoration: none;
   color: #666666;
+  transition: color 0.5s;  
 }
 .create_playlist:hover{
   color: #fff;
