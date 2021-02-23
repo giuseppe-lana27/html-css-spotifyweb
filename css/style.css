@@ -284,7 +284,8 @@ ul.playlists{
   padding: 5px 0;
 }
 .song_title,
-.artist{
+.artist,
+.song{
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -357,14 +358,17 @@ footer{
   display: inline-block;
   vertical-align: middle;
 }
-.song_name h4,
+.song{
+  font-size: 15px;
+}
+.song_name a,
 .song_name p{
   transition: color 0.4s;
 }
 .song_name p{
   font-size: 13px;
 }
-.song_name h5:hover,
+.song_name a:hover,
 .song_name p:hover{
   color: #fff;
   cursor: pointer;
@@ -515,6 +519,9 @@ footer{
   }
 }
 @media screen and (max-width: 992px) {
+  .song {
+    font-size: 13px;
+  }
   .save{
     vertical-align: middle;
   }
@@ -646,6 +653,9 @@ footer{
   .left{
     padding: 3px;
   }
+  .song {
+    font-size: 13px;
+  }
   .save{
     vertical-align: middle;
   }
@@ -658,8 +668,8 @@ footer{
   .album_img{
     height: 30px;
   }
-  .song_name{
-    font-size: 14px;
+  .song{
+    font-size: 12px;
   }
   .song_name p{
     font-size: 12px;
