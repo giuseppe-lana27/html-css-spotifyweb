@@ -9,6 +9,19 @@ body{
   color: #666666;
   font-family: 'Montserrat', sans-serif;
 }
+/* custom scroll */
+::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb{
+  background-color: grey;
+  border: 2px solid #555555;
+}
 .wrapper{
   height: 100vh;
 }
@@ -50,6 +63,7 @@ aside{
 .search,
 .library{
   padding: 5px 5px;
+  transition: border 0.5s;
 }
 .home a,
 .search a,
@@ -58,8 +72,11 @@ aside{
   color: #666666;
   vertical-align: middle;
   padding: 10px;
+  transition: color 0.5s;
 }
-.home{
+.home:hover,
+.search:hover,
+.library:hover{
   border-left: 2px solid lime;
 }
 .home img,
@@ -96,6 +113,7 @@ aside{
 .create_playlist i{
   font-size: 30px;
   vertical-align: middle;
+  transition: color 0.5s;
 }
 .create_playlist a{
   vertical-align: middle;
@@ -110,6 +128,7 @@ aside{
 }
 ul.playlists{
   height: calc(100% - 80px);
+  overflow-y: auto;
 }
 .playlists{
   list-style: none;
@@ -123,6 +142,7 @@ ul.playlists{
 .playlist li a{
   text-decoration: none;
   color: #666666;
+  transition: color 0.5s;
 }
 .playlist li a:hover{
   color: #fff;
@@ -144,7 +164,8 @@ ul.playlists{
 .install-app a{
   text-decoration: none;
   color: #666666;
-  vertical-align: middle,
+  vertical-align: middle;
+  transition: color 0.5s;
 }
 .install-app:hover a{
   color: #fff;
@@ -192,6 +213,7 @@ ul.playlists{
   color: #fff;
   text-decoration: none;
   display: inline-block;
+  transition: all 0.5s;
 }
 .btn:hover{
   transform: scale(1.1);
@@ -221,11 +243,12 @@ ul.playlists{
   text-transform: uppercase;
   color: #666666;
   font-weight: bold;
+  transition: color 0.5s;
 }
 .albums_nav ul li a:hover{
   color: #fff;
 }
-.underscored{
+.underscored:hover{
   border-bottom: 2px solid lime;
   padding-bottom: 5px;
 }
@@ -267,7 +290,8 @@ ul.playlists{
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
 }
 .overlay i{
   position: absolute;
@@ -278,7 +302,7 @@ ul.playlists{
   color: #fff;
 }
 .album-box:hover .overlay{
-  visibility: visible;
+  opacity: 1;
   cursor: pointer;
 }
 .second_section p,
