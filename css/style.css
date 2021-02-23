@@ -5,6 +5,9 @@
   box-sizing: border-box;
 }
 /* mix */
+html{
+  scroll-behavior: smooth;
+}
 body{
   color: #666666;
   font-family: 'Montserrat', sans-serif;
@@ -142,10 +145,11 @@ ul.playlists{
 .playlist li a{
   text-decoration: none;
   color: #666666;
-  transition: color 0.5s;
+  transition: all 0.5s;
 }
 .playlist li a:hover{
   color: #fff;
+  padding-left: 5px;
 }
 .bottom-aside{
   margin-top: auto;
@@ -243,7 +247,7 @@ ul.playlists{
   text-transform: uppercase;
   color: #666666;
   font-weight: bold;
-  transition: color 0.5s;
+  transition: all 0.5s;
 }
 .albums_nav ul li a:hover{
   color: #fff;
@@ -273,11 +277,14 @@ ul.playlists{
   margin-right: 15px;
 }
 .album_description{
+  margin-top: 10px;
   text-align: center;
   padding: 5px 0;
 }
-.album_description h3{
+.song_title{
   color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 .author{
   margin: 10px 0;
@@ -359,6 +366,9 @@ footer{
   display: inline-block;
   margin-left: 20px;
 }
+.save i{
+  transition: color 0.5s;
+}
 .save i:first-child{
   margin-right: 10px;
 }
@@ -367,7 +377,7 @@ footer{
   cursor: pointer;
 }
 .middle{
-  width: 60%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -392,6 +402,7 @@ footer{
 .play{
   font-size: 40px;
   vertical-align: middle;
+  transition: transform 0.5s;
 }
 .play:hover{
   transform: scale(1.1);
@@ -413,10 +424,11 @@ footer{
   margin: 0 15px;
 }
 .passed_time{
-  width: 30%;
+  width: 20%;
   height: 3px;
   background-color: #fff;
   position: relative;
+  transition: 0.4s;
 }
 .rounded{
   width: 10px;
@@ -427,6 +439,7 @@ footer{
   right: 0;
   bottom: -3px;
   visibility: hidden;
+  transition: 0.4s;
 }
 .passed_time:hover{
   background-color: lime;
@@ -445,7 +458,7 @@ footer{
   vertical-align: middle;
 }
 .volume li:not(:last-child){
-  margin-right: 15px;
+  margin-right: 10px;
 }
 .volume li a{
   text-decoration: none;
@@ -472,6 +485,7 @@ footer{
   top: -3px;
   right: 0;
   visibility: hidden;
+  transition: 0.4s;
 }
 .total_volume:hover .volume_circle{
   visibility: visible;
@@ -501,7 +515,7 @@ footer{
     display: block;
   }
   .middle{
-    width: 50%;
+    width: 45%;
   }
   .player li:not(:last-child){
     margin-right: 20px;
@@ -541,7 +555,7 @@ footer{
     display: block;
   }
   .middle{
-    width: 40%;
+    width: 35%;
     margin-top: 10px;
   }
   .player li:not(:last-child){
@@ -618,7 +632,7 @@ footer{
     width: 100%;
   }
   .left{
-    padding: 0;
+    padding: 3px;
   }
   .save{
     vertical-align: middle;
@@ -632,6 +646,12 @@ footer{
   .album_img{
     height: 30px;
   }
+  .song_name{
+    font-size: 14px;
+  }
+  .song_name p{
+    font-size: 12px;
+  }
   .player li i{
     font-size: 17px;
   }
@@ -642,10 +662,10 @@ footer{
     font-size: 12px;
   }
   .volume li:not(:last-child){
-    margin-right: 5px;
+    margin-right: 3px;
   }
   .volume li a i{
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 500px){
