@@ -164,6 +164,8 @@ ul.playlists{
   height: 20px;
   vertical-align: middle;
   opacity: 0.5;
+  transition: opacity 0.5s;
+
 }
 .install-app a{
   text-decoration: none;
@@ -281,7 +283,8 @@ ul.playlists{
   text-align: center;
   padding: 5px 0;
 }
-.song_title{
+.song_title,
+.artist{
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -353,6 +356,10 @@ footer{
 .song_name{
   display: inline-block;
   vertical-align: middle;
+}
+.song_name h4,
+.song_name p{
+  transition: color 0.4s;
 }
 .song_name p{
   font-size: 13px;
@@ -443,6 +450,7 @@ footer{
 }
 .passed_time:hover{
   background-color: lime;
+  cursor: pointer;
 }
 .total_time:hover .rounded{
   visibility: visible;
@@ -541,7 +549,7 @@ footer{
   }
   .album-box{
     width: calc((100% / 2) - 15px);
-    font-size: 12px;
+    font-size: 14px;
   }
   .music_player{
     flex-wrap: nowrap;
@@ -629,7 +637,11 @@ footer{
     text-align: center;
   }
   .album-box img{
-    width: 100%;
+    width: 50%;
+  }
+  .circle_album img{
+    border-radius: 100%;
+    overflow: hidden;
   }
   .left{
     padding: 3px;
@@ -694,5 +706,38 @@ footer{
   }
   .total_volume{
     width: 50px;
+  }
+}
+@media screen and (max-width: 350px){
+  .left{
+    display: none;
+  }
+  .middle{
+    width: 100%;
+  }
+  .right{
+    display: none;
+  }
+}
+@media (max-height: 350px){
+  .btn{
+    display: none;
+  }
+  .upgrade{
+    height: 0;
+    animation-name: disappear;
+    animation-duration: 1s;
+  }
+
+  @keyframes disappear {
+    0%{
+      height: 80px;
+    }
+    50%{
+      height: 40px;
+    }
+    100%{
+      height: 0;
+    }
   }
 }
